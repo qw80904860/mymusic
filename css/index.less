@@ -1,5 +1,6 @@
 /* 通用样式 */
-@com-green: #31C27C;
+@com-red: #e60026;
+@con-green: #31c27c;
 @com-gray: rgba(255, 255, 255, .5);
 
 .text-clip {
@@ -55,12 +56,12 @@ body,
         margin-left: .05rem;
         width: .35rem;
         height: .35rem;
-        background: url('../images/music.svg') no-repeat;
-        background-size: 100% 100%;
+        background: url('../images/sprite_play.png') no-repeat;
+        background-position: 0rem -2rem;
 
-        &.move {
+        /* &.move {
             animation: musicMove 1s linear 0s infinite both;
-        }
+        } */
     }
 
     .base {
@@ -127,7 +128,7 @@ body,
             color: @com-gray;
 
             &.active {
-                color: @com-green;
+                color: @com-red;
                 transition: color .3s;
             }
         }
@@ -185,16 +186,16 @@ body,
         display: block;
         margin: 0 auto;
         width: 2.13rem;
-        height: .5rem;
-        line-height: .5rem;
+        height: .45rem;
+        line-height: .45rem;
         text-align: center;
         font-size: .18rem;
         color: #fff;
         text-indent: .2rem;
         border-radius: .25rem;
-        background: url('../images/sprite_play.png') no-repeat @com-green;
-        background-size: .4rem 3.5rem;
-        background-position: .1rem -2.915rem;
+        background: url('../images/sprite_play.png') no-repeat @com-red;
+        background-size: .4rem 3.48rem;
+        background-position: .15rem -2.915rem;
     }
 
     .bar {
@@ -221,7 +222,7 @@ body,
                 left: 0;
                 width: 0;
                 height: 100%;
-                background: @com-green;
+                background: @con-green;
                 border-radius: 2px;
 
                 .progress-bar {

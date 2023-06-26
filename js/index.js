@@ -77,14 +77,14 @@ FastClick.attach(document.body);
         if (audioBox.paused) {
             //当前是暂停的：我们让其播放
             audioBox.play()
-            playerButton.className = 'player-button move'
+            playerButton.style.backgroundPosition = "0rem -2.39rem"
             handle()
             if (!timer) timer = setInterval(handle, 1000)
             return
         }
         //当前是播放的：我们让其暂停
         audioBox.pause()
-        playerButton.className = 'player-button'
+        playerButton.style.backgroundPosition = "0rem -2rem"
         clearInterval(timer)
         timer = null
     })
